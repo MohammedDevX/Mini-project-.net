@@ -1,0 +1,143 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7209" // End point url of the api gateway
+  },
+
+  // He we configure our microservices routes
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/user/index",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/user/index",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/user/index/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/user/index/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/user/register",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/user/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/user/login",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/user/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/user/refresh-token",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/user/refresh-token",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/user/auth",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/user/auth",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/user/authclient",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/user/authclient",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Client"
+      }
+    }
+
+    //{
+    //  "UpstreamPathTemplate": "/user/authclient",
+    //  "UpstreamHttpMethod": [ "GET" ],
+    //  "DownstreamPathTemplate": "/api/user/authclient",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7150
+    //    }
+    //  ]
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/user/{any}", // The displayed url that the user going to see
+    //  "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ], // Http methodes used in the microservice
+    //  "DownstreamPathTemplate": "/api/User/{any}", // The url of the microservice
+    //  "DownstreamScheme": "https", // The protocole used 
+    //  // Here we define the host => localhost, and the port => 7150 of the microservice
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7150
+    //    }
+    //  ],
+    //  // Rate limite : definde the numbre of requests by a client in a spesefice periode, so he cannot send more than 
+    //  // what defined
+    //  "RateLimitOptions": {
+    //    "EnableRateLimiting": true, // Here we enable the rate limiting 
+    //    "Period": "10s", // Here we spesify the periode
+    //    "Limit": 3, // max requests in that periode 
+    //    "PeriodTimespan": 10 // Wait 10s after achieving the limit, to be able to send request again
+    //  },
+    //  "AuthenticationOptions": {
+    //    "AuthenticationProviderKey": "Bearer",
+    //    "AllowedScopes": []
+    //  }
+    //  // So the url of the microservice is https://localhost:7150/......
+    //}
+  ]
+}
