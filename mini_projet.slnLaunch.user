@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "User_service\\User_service\\User_service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Ocelot_api_gateway\\Ocelot_api_gateway\\Ocelot_api_gateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
