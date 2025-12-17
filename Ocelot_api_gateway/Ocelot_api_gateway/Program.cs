@@ -19,7 +19,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     {
         // Here we mention the rules that UseAuthenticaton middleware have to check if the token is valid or not
         options.TokenValidationParameters = new TokenValidationParameters
-        //options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
             ValidIssuer = builder.Configuration.GetValue<string>("AppSettings:Issuer"),
@@ -31,7 +30,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
             ValidateIssuerSigningKey = true
         };
         // N.B : So whene the user send a login request the middleware UseAuthentication, the client send the jwt 
-        // token if his connected and the middleware check if this token is valid, if yes he create
+        // token if his connected, now the middleware check if this token is valid, if yes he create
         // HttpContext.User with claims, now when we send request to an endpoint who have Authorize annotation 
         // the middleware UseAuthorization see if the HttpContext.User is filled, if no he return 401 status code 
         // Not athentified, and if he is filled and he doesnt have the role he return 403 status code, not 

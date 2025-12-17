@@ -9,6 +9,10 @@
       {
         "Path": "Ocelot_api_gateway\\Ocelot_api_gateway\\Ocelot_api_gateway.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "Products_service\\Products_service\\Products_service.csproj",
+        "Action": "Start"
       }
     ]
   }

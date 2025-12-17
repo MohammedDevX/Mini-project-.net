@@ -48,3 +48,4 @@ C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Ocelot_api_gateway\Ocelot_api
 C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Ocelot_api_gateway\Ocelot_api_gateway\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Ocelot_api_gateway\Ocelot_api_gateway\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Ocelot_api_gateway\Ocelot_api_gateway\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Ocelot_api_gateway\Ocelot_api_gateway\obj\Debug\net9.0\Ocelot_api_gateway.sourcelink.json

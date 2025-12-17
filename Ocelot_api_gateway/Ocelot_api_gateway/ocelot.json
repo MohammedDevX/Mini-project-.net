@@ -15,7 +15,13 @@
           "Host": "localhost",
           "Port": 7150
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "Limit": 3,
+        "PeriodTimespan": 10
+      }
     },
     {
       "UpstreamPathTemplate": "/user/index/{id}",
@@ -90,6 +96,25 @@
         {
           "Host": "localhost",
           "Port": 7150
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Client"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/produit/{any}",
+      "UpstreamHttpMethod": [ "GET", "POST"],
+      "DownstreamPathTemplate": "/api/Catalogue/{any}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7137
         }
       ],
       "AuthenticationOptions": {
