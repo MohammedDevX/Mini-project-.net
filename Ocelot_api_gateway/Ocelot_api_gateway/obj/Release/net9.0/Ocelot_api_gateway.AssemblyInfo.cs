@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ocelot_api_gateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1259a2a071ce45d91b831ae94a8a9d0db8b064d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8743a0b6cb171a7550331cfa9fbf8646cc2d2356")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ocelot_api_gateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ocelot_api_gateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

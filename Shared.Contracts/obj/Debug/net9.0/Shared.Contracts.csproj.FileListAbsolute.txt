@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.deps.json
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.dll
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\bin\Debug\net9.0\Shared.Contracts.pdb
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.AssemblyInfo.cs
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.sourcelink.json
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.dll
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\refint\Shared.Contracts.dll
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\Shared.Contracts.pdb
+C:\Users\hp\Desktop\.NET projects\TPS\Mini_project\Shared.Contracts\obj\Debug\net9.0\ref\Shared.Contracts.dll

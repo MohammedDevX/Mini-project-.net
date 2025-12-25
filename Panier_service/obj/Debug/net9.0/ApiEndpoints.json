@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "Panier_service.Controllers.PanierController",
+    "Method": "AddPanier",
+    "RelativePath": "api/Panier/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vm",
+        "Type": "Panier_service.ViewModels.PanierVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Panier_service.Controllers.PanierController",
+    "Method": "GetPanier",
+    "RelativePath": "api/Panier/get-panier/{idClient}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idClient",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
