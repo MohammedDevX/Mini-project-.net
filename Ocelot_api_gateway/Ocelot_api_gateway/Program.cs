@@ -33,7 +33,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         // token if his connected, now the middleware check if this token is valid, if yes he create
         // HttpContext.User with claims, now when we send request to an endpoint who have Authorize annotation 
         // the middleware UseAuthorization see if the HttpContext.User is filled, if no he return 401 status code 
-        // Not athentified, and if he is filled and he doesnt have the role he return 403 status code, not 
+        // Not athentified, and if he is filled and he doesnt have the role he return 403 status code Forbidden, not 
         // authorized to this action 
     });
 
@@ -41,7 +41,7 @@ var app = builder.Build();
 
 app.UseAuthentication();
 app.UseAuthorization();
-await app.UseOcelot(); // Use ocelot service comme middleware dans le pipeline
+await app.UseOcelot();
 
 app.MapGet("/", () => "Hello World!");
 

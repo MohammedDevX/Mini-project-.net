@@ -23,7 +23,7 @@ namespace Panier_service.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddPanier(PanierVM vm) 
+        public async Task<IActionResult> AddPanier(PanierVM vm)
         {
             if (!ModelState.IsValid)
             {

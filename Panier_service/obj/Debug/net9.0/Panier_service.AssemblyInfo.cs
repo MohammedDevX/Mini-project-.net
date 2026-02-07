@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Panier_service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8743a0b6cb171a7550331cfa9fbf8646cc2d2356")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4bb7ff05df032ef305d83bae891e1556e426bb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Panier_service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Panier_service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

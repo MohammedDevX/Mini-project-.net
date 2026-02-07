@@ -32,7 +32,6 @@ namespace Panier_service.Services.Kafka
 
             // Here using builder designe pattern
             var consumer = new ConsumerBuilder<string, string>(consumerConfig).Build();
-
             // Listening to product-events topic
             consumer.Subscribe(config["Kafka:ProductTopic"]);
 

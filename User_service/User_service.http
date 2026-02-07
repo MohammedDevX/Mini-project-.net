@@ -1,0 +1,37 @@
+@routeURL = http://localhost:5194
+
+GET {{User_service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+### 
+GET {{routeURL}}/api/User
+Accept: application/json
+
+### 
+
+POST {{routeURL}}/api/User/register
+Content-Type: application/json
+{
+  "NomUser": "MohammedX23DEV",
+  "Email": "mohammed@gmail.com",
+  "MotPasse": "12345",
+  "Role": 1,
+}
+
+###
+
+POST {{routeURL}}/api/User/login
+Content-Type: application/json
+{
+  "Email": "mohammed@gmail.com",
+  "MotPasse": "12345"
+}
+
+###
+
+POST {{routeURL}}/api/User/refresh-token
+Content-Type: application/json
+{
+  "UserId": 3,
+  "RefreshToken": "D0VRuh8j6d/SWKT+xkY3tK4M2mjddcmbjChHFmhwEmk="
+}
