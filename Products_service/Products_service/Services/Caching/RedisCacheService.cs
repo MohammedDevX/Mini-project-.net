@@ -6,6 +6,7 @@ namespace Products_service.Services.Caching
 {
     public class RedisCacheService : IRedisCacheService
     {
+        // Here we use DistributedCache for scalability
         private IDistributedCache cache;
         public RedisCacheService(IDistributedCache cache)
         {
@@ -21,7 +22,7 @@ namespace Products_service.Services.Caching
                 // you call the function for ex => cash.GetData<List<ProduitDTO>>(1) =>, so here the type of 
                 // T is a list of objects, so the return value going to be null, if it was a number, he will
                 // going to return 0 etc ...
-                return default(T);
+                return default;
             }
 
             return JsonSerializer.Deserialize<T>(data);

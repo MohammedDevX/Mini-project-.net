@@ -21,4 +21,4 @@ project.fragment.lock.json
 *.cache
 *.log
 *.tmp
-appsettings.Development.json
+#appsettings.Development.json
